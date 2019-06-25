@@ -1,0 +1,22 @@
+{% extends 'blog/base.html'%}
+
+{% block header%}
+  <div class="p_title">
+    <h2>{{post.title}}</h2>
+    <hr width="500" align="left" size="4">
+</div>
+{% endblock %}
+{% block content %}
+    <div class="text">
+    <h3>{{ post.text }}<br/><br/><br/></h3>
+    </div>
+    
+    <div class=comment>
+    <a href="{% url 'post_comment' pk=post.pk %}"><h4>Comments {{c_number}}</h4></a>
+    </div>
+{% endblock content%}
+{% block footer%}
+<div class="start-page-link-1">
+<a href="{% url 'index' %}"><h3>Home Page</h3></a>
+</div>
+{% endblock footer%}

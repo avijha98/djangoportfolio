@@ -1,0 +1,25 @@
+{% extends 'blog/base.html' %}
+
+{% block header %} 
+    <h3>Comments </h3>
+    <hr width="200" align="left" size="4">
+{% endblock header %}
+{% block content %}
+    <div class="comments">
+        {% for comment in comments %}
+            <div class ="comment">
+                <h4>{{comment.name}}</h4>
+                <hr width="500" align="left" size="4">
+                <h4>{{comment.comment}}<br/><br/></h4>
+                
+            </div>
+        {% endfor %}
+    </div>
+   <h3><a href="{% url 'add_comment' pk=p_id %}">Add Comment</a><h3>
+{% endblock content%}
+{% block footer%}
+<div class="start-page-link-3">
+<a href="{% url 'index' %}"><h3>Home Page</h3></a>
+</div>
+{% endblock footer%}
+{% comment %} <a class="link" href ="{% url 'post_list' %}"><h3>Project that i have done</h3></a> {% endcomment %}

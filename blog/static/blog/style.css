@@ -1,0 +1,66 @@
+
+body {
+     background-image:url('back.jpg'); 
+    padding-top:10px;
+    padding-left:5px;
+    background-color: whitesmoke;
+}
+hr{
+    height:2px;
+    color:darkslategray;
+    background-color: darkslategray;
+    border:none;
+}
+.footer {
+    position :absolute;
+    left:0;
+    bottom:0;
+    width:0;
+    height:40px;
+    color:darkblue;
+}
+form {
+  padding-top:10px;
+}
+link{
+   width:300px;
+}
+.comment{
+    color:darkblue;
+}
+.text{
+    color:darkslateblue;
+}
+.p_title{
+    color:darkslategray;
+}
+.postandlist{
+    color:blue;
+}
+.intro{
+    color: darkslategray;
+    padding-top:50px;
+    padding-left:100px;
+    font-style:normal;
+}
+.photo{
+    padding-top:10px;
+    padding-left:280px;
+}
+.texti{
+    color:darkslateblue;
+    padding-top:100px;
+    padding-left:10px;
+}
+.list{
+    color:darkslategray;
+    padding-top:18px;
+    padding-left:2px;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }

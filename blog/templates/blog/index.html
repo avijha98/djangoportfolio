@@ -1,0 +1,98 @@
+{% extends 'blog/base.html' %}
+
+{% block header %}
+    
+{% endblock header%}
+
+{% block content %}
+  <div class="container">
+    <div class="row">
+        <div class="col-md-6 col-sm-6">
+            <h1 style="color:#66CDAA;padding-left:10px;padding-top:20px;">AVINASH JHA</h1>
+        </div>
+        <div class="col-md-6 col-sm-6">
+                <nav class="navbar navbar-expand-md  bg-dark navbar-dark">
+                <div class="container-fluid">
+                <div class="navbar-header">
+                </div>
+                <div class="list">
+                    <ul class="nav navbar-nav ">
+                        <li class="active"><a href="#Ttop"><h4>Home</h4></a></li>
+                        <li><a href={% url 'post_list' %}><h4 style="color:darkslategray;">resume</h4></a></li>
+                        <li><a href="#come"><h4 style="color:darkslategray;">projects</h4></a></li>
+                        <li><a href="#"><h4 style="color:darkslategray;">contact</h4></a></li>
+                    </ul>
+                </div>
+                 </div>
+                </nav>
+        </div>
+    </div>
+    <hr width=100%;align="front" size="4">
+    <div class="row">
+        <div class="col-md-6 col-sm-6 ">
+            {% load static %}
+            <img src="{% static 'blog/avina.JPG' %}" style="width:250px;height:250px;border-radius:50%;">
+        </div>
+        <div class="col-md-6 col-sm-4 ">
+            <p style="font-size:20px;"> Hi! I am Avinash I love creating new things. I am a competetive programmer. I like to participate in competitive coding
+             And language I am most familiar with is Cpp </p>
+             </br>
+             <p style="font-size:20px;"> Right now I am a fourth year undergradute student at Jadavpur University Kolkata.</p>
+             <p style="font-size:20px;">These are the links to my accounts on some of the coding platforms.</p>
+            <nav class="navbar navbar-expand-md  bg-dark navbar-dark">
+                <div class="container-fluid">
+                <div class="navbar-header">
+                </div>
+                <div class="list">
+                    <ul class="nav navbar-nav">
+                        <li> <a href="https://www.codechef.com/users/avinash_jha98">Codechef</a> </li>
+                       <li> <a href="https://leetcode.com/user5849q/">leetCode</a> </li>
+                        <li><a href="https://www.stopstalk.com/user/profile/avijha_98">StopStalk</a></li>
+                    </ul>
+                </div>
+                 </div>
+                </nav>
+            
+        
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 col-sm-2" style="padding-left:30px;padding-top:2px;">
+            <a href="https://www.facebook.com/profile.php?id=100009449878717" class="fa fa-facebook-official" style="font-size:30px";color:darakblue;></a>
+            <a href="#" class="fa fa-twitter" style="font-size:30px;padding-left:20px;color:#00BFFF;"></a>
+            <a href="#" class="fa fa-github" style="font-size:30px;padding-left:20px;color:#2F4F4F;"></a>
+            <a href="https://www.instagram.com/avijha_98/" class="fa fa-instagram" style="font-size:30px;padding-left:20px;color:#DC143C;"></a>
+             
+        </div>
+
+    </div>
+    <div class="row">
+        <a name="come"></a>
+        <div class="col-md-4" style="color:#000000;padding-top:40px;">
+            <h2>ClappyBird</h2>
+            <a class="fab fa-js-square" style="font-size:100px;color:#008080;"></a>
+            <p style="color:black;font-size:16px;">My first project.It is a Simple variation of flappy Bird, Instead of click you can clap and bird will move forwad.
+            The tool thati ahve used are CSS,HTML and P5.js it is animation tool</p>
+            <p> you can get all codes on github:<a href="#" class="fa fa-github" style="font-size:25px;padding-left:5px;color:#000000;"></a> <p>
+            </br></br></br></br>
+        </div>
+        <div class="col-md-4 col-sm-2" style="color:#000000;padding-top:40px;">
+            <h2>Tree Converter</h2>
+             <a class="fab fa-python" style="font-size:100px;color:#FFD700;"></a>
+            <p style="color:black;font-size:16px;">Sometimes to dubug tree problems can be tough because it is hard to visulise test cases.
+                Tree converter can help you there it converts array like input into Tree Structure.
+                it is written in Python.
+            </p>
+            <p> you can get all codes on github:<a href="#" class="fa fa-github" style="font-size:25px;padding-left:5px;color:#000000;"></a> <p>
+             </br></br></br></br>
+        </div>
+        
+    </div>
+    
+    
+  </div>
+ 
+{% endblock content%}
+
+
+           
